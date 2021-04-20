@@ -1,0 +1,183 @@
+
+/*aside-mid*/
+.payment-options {
+	display:flex;
+	margin-left:15px;
+	margin-top:55px;
+	position:relative;
+	flex-direction:column;
+	grid-area:payment-options;
+}
+.payment-options--toMakeFixed{
+	position: fixed;
+}
+
+.payment-options em{
+	position: absolute;
+    top: 40%;
+    left: 0;
+    width: 90px;
+    padding-right: 20px;
+    transform: translatey(-50%);
+    word-break: break-word;	
+}
+.payment-options>.payment-option-top{
+	position:relative;
+	margin-left:10px;
+	margin-bottom:10px;
+}
+.payment-option-top>ul>li.pName,.pPrice{
+  font-size:20px;
+  font-weight:bold;
+}
+.payment-option-top>ul>li.pCode{
+  color:gray;
+}
+
+.crossLine{
+    margin-top:10px;
+    margin-bottom:10px;
+	width:100%;
+	height:0.5px;
+	background-color:darkgray;
+	margin:0 auto;
+}
+
+/*"payment-option-mid"*/
+.payment-options>.payment-option-mid{
+	position:relative;
+}
+
+.payment-option-mid ul li{
+	position: relative;
+    margin-top: 15px;
+    padding: 0 0 0 90px;
+}
+
+.payment-option-color div{
+ display: flex;		
+ flex-flow:row wrap;
+ justify-content:flex-start; 
+}
+
+
+li.payment-option-color>div>a {
+ 	justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 50px;
+    margin-right: 4px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    font-size: 0;
+    line-height: 0;
+}
+
+.payment-option-mid>.payment-option-size>div{
+	 display: flex;		
+    flex-flow:row; 
+}
+.payment-option-mid>.payment-option-size>.btn_size{
+	justify-content:flex-start;
+}
+
+.payment-option-mid>.payment-option-size>.btn_size:first-child{
+	margin-left:5px;	
+}
+.payment-option-mid>.payment-option-size>.btn_size>button{
+	width:40px;
+	height:20px;
+	margin-top:5px;
+	margin-left:4px;
+	border:1px solid #ddd;
+	color:#666;
+	font-size:12px;
+	line-height:18px;
+	text-align: center;
+	vertical-align: top;
+	
+}
+.payment-option-mid>.payment-option-quantity>div{
+	 display: flex;		
+    flex-flow:row; 
+/*     justify-content:space-between;  */
+}
+
+
+.payment-option-mid>.payment-option-quantity>div~button {
+    top: 0;
+    width: 14px;
+    height: 30px;
+    font-size: 0;
+    line-height: 0;
+}
+.payment-option-mid>.payment-option-quantity>div input{
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.payment-option-mid>.payment-option-deliver>div{
+	display: flex;
+	flex: row nowrap;
+	justify-content: space-between;
+}
+
+
+
+/*.payment-option-bottom> */
+
+.payment-option-bottom{
+ display:flex;
+ flex-flow:column;
+ margin-top: 20px;	
+}
+
+.payment-option-bottom>div.buynow_btn{
+	width: 100%;
+    height: 45px;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    line-height: 43px;
+    text-align: center;
+}
+.payment-option-bottom>div.buynow_btn>a{
+  color: #fff;
+}
+
+
+
+.payment-option-bottom>div.nPay_btn{
+	display:flex;
+	flex-flow:row;
+	justify-content:space-between;
+}
+
+.nPay_btn>a.addTocart{
+    width: 77%;
+    height: 45px;
+    margin-top: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    line-height: 43px;
+    text-align: center;
+  }
+.nPay_btn>a.Npay_btn{
+    width: 20%;
+    height: 45px;
+    margin-top: 5px;
+    border: 1px solid #01c73c;
+    background: #01c73c url(https://static.discovery-expedition.com/pc/static/images/common/btn_npay.png) no-repeat 0 0;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+li.btn_go_review>a{
+  text-decoration:underline;
+}
+
+
+

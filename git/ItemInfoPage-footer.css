@@ -1,0 +1,6 @@
+
+/*footer*/
+.footer{
+  background:green;
+  grid-area:footer;
+}

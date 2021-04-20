@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{padding: 0; margin: 0; font-family: 'Raleway', sans-serif;}
+
+ ul,ol,li{ list-style: none;}
+ img{display: block;}
+ a{display:block;
+    box-sizing: border-box;
+ 	text-decoration: none; color: #333;}
+em{
+	font-style: normal;
+    font-weight: 400;
+} 	
+.container{
+  display:grid;
+  grid-template-columns:15% 1fr 20% 15%;
+  grid-auto-rows:100px 1fr 100px;
+  grid-template-areas:
+    "header     header    header       header"
+    "asideleft section payment-options asideright"
+    "footer    footer     footer     footer";
+    height:100vh;
+    grid-gap:5px;
+}
+.header {
+  background:gray;
+  grid-area:header;
+}
