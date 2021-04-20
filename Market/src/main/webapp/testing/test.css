@@ -1,0 +1,22 @@
+@charset "EUC-KR";
+.Leftaside_search_button {
+  overflow: hidden;
+    display: block;
+    width: 109px;
+    height: 29px;
+    border-bottom: 4px solid #000;
+    font-size: 12px;
+    text-align: center;
+  
+}
+
+.search_text_box {
+    display: none;
+    position: absolute;
+    left: -10px;
+    top: -6px;
+    width: 191px;
+    height: 35px;
+    background: #fff;
+    border: 1px solid #ddd;
+}

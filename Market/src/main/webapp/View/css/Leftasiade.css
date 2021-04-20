@@ -1,0 +1,39 @@
+@charset "EUC-KR";
+
+ul {
+   list-style:none;  /*글머리 삭제*/
+   padding: 0px;/*브라우저마다 다른 ul의 여백 기본값을 초기화*/
+   margin: 0px;/*브라우저마다 다른 ul의 여백 기본값을 초기화*/
+   padding-left:0px; /*앞에 공백 삭제*/
+  /*position:absolute; 주메뉴 절대위치 설정 */
+   }
+
+
+
+
+li:hover{/*마우스 오버시*/
+	/*background-color:#FA58F4;/*리스트 배경 색*/
+	
+}
+
+
+ul ul {/*부 메뉴 설정 */
+display:none;
+}
+
+ul a {
+	text-decoration:none; /*링크 밑줄 없어짐*/
+	color:black;	/*링크 색상*/	
+	display:block;	/*텍스트를 벗어나도 클릭해서 이동할수 있도록 한다. a 요소를 block 요소로 만든다 */
+	width: 150px;	/*블락 요소의 너비를 설정한다*/
+}
+	
+
+ul li:hover > ul 
+{display:block;} /*주 메뉴에 마우스 오버했을 때 부 메뉴 표시하기*/
+ul ul li:hover > ul 
+{display:block;}
+
+a:hover{/*마우스 오버시*/
+	color: black;	/*오버시 색상*/
+	} 
