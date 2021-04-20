@@ -1,0 +1,60 @@
+@charset "EUC-KR";
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header header"
+    "leftasrmflide section rightaside"
+    "footer footer footer";
+  height: 80vh;
+  grid-gap: 10px;
+  
+}
+
+
+.header {
+  background: skyblue;
+  grid-area: header;
+}
+
+.header i { 
+font-size:2rem;
+  
+}
+
+
+.leftaside {
+  background: yellow;
+  grid-area: leftaside;
+}
+
+
+.rightaside {
+  background: pink;
+  grid-area: rightaside
+}
+
+
+.rightaside i {
+  font-size:1.5rem;
+}
+
+.section{
+  background: red;
+  grid-area: section;
+}
+
+.footer{
+  background: green;
+  grid-area: footer;
+}
+
+.rightaside .box {
+  background: skyblue;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  
+}
